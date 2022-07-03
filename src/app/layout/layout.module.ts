@@ -16,7 +16,9 @@ import { PublicLayoutComponent } from './public-layout/public-layout.component';
     RouterModule
   ],
   exports: [
-    RouterModule
+    RouterModule,
+    PrivateLayoutComponent,
+    PublicLayoutComponent
   ]
 })
 export class LayoutModule { }
