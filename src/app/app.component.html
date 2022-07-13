@@ -61,7 +61,9 @@
               <!-- <div class="input-group-prepend">
                 <span class="input-group-text"><i class="fa fa-send"></i></span>
               </div> -->
-              <input type="text" class="form-control" placeholder="Enter text here...">
+              <input [(ngModel)]="text" type="text" class="form-control" placeholder="Enter text here...">
+              <button type="button" class="btn btn-primary" (click)="send()" [disabled]="loading">Send <i
+                  class="fa fa-spinner fa-spin" *ngIf="loading"></i></button>
             </div>
           </div>
         </div>
