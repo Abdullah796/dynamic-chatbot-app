@@ -12,25 +12,25 @@ export class AppComponent implements OnInit {
   text: string = "";
   loading: boolean = false;
   nedAdmissionDialogues: any = [
-    {
-      "type": "user",
-      "question": "How are you?"
-    },
-    {
-      "type": "chatbot",
-      "retrievedAnswer": "I am fine"
-    }
+    // {
+    //   "type": "user",
+    //   "question": "How are you?"
+    // },
+    // {
+    //   "type": "chatbot",
+    //   "retrievedAnswer": "I am fine"
+    // }
   ];
 
   covidDialogues: any = [
-    {
-      "type": "user",
-      "question": "Hey"
-    },
-    {
-      "type": "chatbot",
-      "retrievedAnswer": "Hey"
-    }
+    // {
+    //   "type": "user",
+    //   "question": "Hey"
+    // },
+    // {
+    //   "type": "chatbot",
+    //   "retrievedAnswer": "Hey"
+    // }
   ];
 
   constructor(private chatbotService: ChatbotService) { }
@@ -56,7 +56,6 @@ export class AppComponent implements OnInit {
       return;
     }
     this.loading = true;
-    this.text = "";
     if (this.selectedChatbotName == "Ned Admission FAQs") {
       this.nedAdmissionDialogues.push({
         "type": "user",
@@ -83,5 +82,6 @@ export class AppComponent implements OnInit {
       });
     }
     console.log("clicked: ", this.text);
+    this.text = "";
   }
 }
