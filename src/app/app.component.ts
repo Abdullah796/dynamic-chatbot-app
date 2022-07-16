@@ -77,7 +77,7 @@ export class AppComponent implements OnInit {
 
       this.chatbotService.asked_covid({ "question": this.text }).subscribe((data: any) => {
         console.log("reponseCovidFAQ: ", data);
-        this.nedAdmissionDialogues.push(data);
+        this.covidDialogues.push(data);
         this.loading = false;
       });
     }
