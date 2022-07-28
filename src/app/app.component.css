@@ -1,8 +1,21 @@
 body {
-    background-color: #f4f7f6;
+    /* background-color: #f4f7f6; */
     margin-top: 20px;
+    background-color: #41424361
 }
 
+.container-top{
+    background-color: #3a7f71eb;
+    height:75px;
+}
+
+.container {
+    margin-top: -45px;
+}
+
+.main-container {
+    background-color: #41424361;
+}
 .card {
     background: #fff;
     transition: .5s;
@@ -19,15 +32,35 @@ body {
     position: absolute;
     left: 0;
     top: 0;
-    padding: 20px;
+    padding: 0 20px;
     z-index: 7
 }
 
 .chat-app .chat {
     margin-left: 280px;
-    border-left: 1px solid #eaeaea
+    border-left: 1px solid #eaeaea;
 }
 
+.chat-app .chat .progress {
+    width: 30%;
+    margin-top: 10px;
+}
+
+.chat-app .chat .progress .progress-bar {
+    background-color: #3a7f71eb;
+}
+.chat-app .btn-success {
+    background: #3a7f71eb;
+}
+
+.chat-message-input-field {
+    height: 55px;
+}
+.chat-app .people-list .chatbots-header{
+    background-color: #e8f1f3;
+    padding: 20px 10px;
+    padding-bottom: 35px;
+}
 .people-list {
     -moz-transition: .5s;
     -o-transition: .5s;
@@ -76,7 +109,8 @@ body {
 
 .chat .chat-header {
     padding: 15px 20px;
-    border-bottom: 2px solid #f4f7f6
+    border-bottom: 2px solid #f4f7f6;
+    background-color: #e8f1f3;
 }
 
 .chat .chat-header img {
@@ -92,7 +126,9 @@ body {
 
 .chat .chat-history {
     padding: 20px;
-    border-bottom: 2px solid #fff
+    border-bottom: 2px solid #fff;
+    height: 500px;
+    overflow: auto;
 }
 
 .chat .chat-history ul {
