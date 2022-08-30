@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  APIEndpoint: "https://2e37-180-149-221-58.in.ngrok.io",
+  APIEndpoint: "https://25dd-111-68-110-250.ap.ngrok.io",
 };
